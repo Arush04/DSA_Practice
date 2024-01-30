@@ -21,7 +21,7 @@ vector<int> preOrder(Node* root) {
     return ans;
 }
 
-
+// Recusrsive Approach
 void preOrderRec(Node* root, vector<int> &ans) {
 	if (root == NULL)
 		return;
@@ -31,19 +31,17 @@ void preOrderRec(Node* root, vector<int> &ans) {
 }
 
 int main() {
-    Node* root = NULL;
-    root = Insert(root, 1);
-    root = Insert(root, 2);
-    root = Insert(root, 3);
-    root = Insert(root, 4);
-    root = Insert(root, 5);
-    root = Insert(root, 6);
-    root = Insert(root, 7);
-    root = Insert(root, 8);
-    root = Insert(root, 9);
-    root = Insert(root, 10);
-	vector<int> ans;
-	preOrderRec(root,ans);
+	struct Node * root = newNode(1);
+	root -> left = newNode(2);
+	root -> right = newNode(3);
+	root -> left -> left = newNode(4);
+	root -> left -> right = newNode(5);
+	root -> left -> right -> left = newNode(8);
+	root -> right -> left = newNode(6);
+	root -> right -> right = newNode(7);
+	root -> right -> right -> left = newNode(9);
+	root -> right -> right -> right = newNode(10);
+	vector<int> ans = preOrder(root);
     for (int i=0; i<ans.size(); i++) {
         cout << ans[i] << " ";
     }

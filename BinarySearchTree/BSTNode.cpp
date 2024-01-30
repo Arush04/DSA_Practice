@@ -7,21 +7,11 @@ struct Node {
 	Node* right;
 };
 
-Node* GetNewNode (int data) {
-	Node* newNode = new Node();
-	newNode->data = data;
-	newNode->left = newNode->right = NULL;
-	return newNode;
-}
+Node* newNode (int data) {
+	Node* newN = new Node();
+	newN->data = data;
+	newN->left = NULL;
+	newN->right = NULL;
 
-Node* Insert(Node* root, int data) {
-	if (root == NULL) {
-		root = GetNewNode(data);
-		return root;
-	}
-	else if (data <= root->data)
-		root->left = Insert(root->left, data);
-	else
-		root->right = Insert(root->right, data);
-	return root;
+	return newN;
 }
