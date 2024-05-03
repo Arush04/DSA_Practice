@@ -6,4 +6,6 @@ I am starting from Stack and Queues as I have already completed the topics befor
 
 This is my attempt to practice DSA every single day and land a decent offer
 
-DSA Sheet I am following is the [Striver SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
+DSA Sheet I am following is the [Striver SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)  
+
+Neetcode [Blind 75](https://neetcode.io/practice)
